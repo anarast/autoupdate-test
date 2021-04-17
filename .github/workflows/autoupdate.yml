@@ -1,7 +1,7 @@
 name: autoupdate
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/5 * * * *"
 jobs:
   autoupdate:
     name: autoupdate
