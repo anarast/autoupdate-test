@@ -1,3 +1,1 @@
 # autoupdate-test
-
-Hello
