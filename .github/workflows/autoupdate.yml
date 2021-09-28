@@ -6,7 +6,7 @@ jobs:
     name: autoupdate
     runs-on: ubuntu-20.04
     steps:
-      - uses: docker://chinthakagodawita/autoupdate-action:v1
+      - uses: docker://anarast/autoupdate-test:latest
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           PR_READY_STATE: "ready_for_review"
