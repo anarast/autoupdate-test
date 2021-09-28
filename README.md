@@ -1,3 +1,3 @@
 # autoupdate-test
 
-test
+Repo for manual auto-update testing
