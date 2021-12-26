@@ -1,6 +1,5 @@
 name: autoupdate
-on:
-  push: {}
+on: workflow_dispatch
 jobs:
   autoupdate:
     name: autoupdate
