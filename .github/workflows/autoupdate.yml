@@ -1,13 +1,11 @@
 name: autoupdate
-on: workflow_dispatch
+on:
+  push: {}
 jobs:
   autoupdate:
     name: autoupdate
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     steps:
-      - uses: docker://anarast/autoupdate-test:latest
+      - uses: docker://anarast/autoupdate-test
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          PR_READY_STATE: "ready_for_review"
-          RETRY_COUNT: "1"
-          MERGE_CONFLICT_ACTION: "fail"
